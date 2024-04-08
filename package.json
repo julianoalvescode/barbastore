@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "install:docker-dev": "docker build -f Dockerfile.dev -t ecommerceshirt .",
+    "start:docker-dev": "docker run -p 3000:3000 ecommerceshirt",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
